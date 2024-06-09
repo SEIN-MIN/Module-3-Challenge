@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Switch</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Light Starts -->
+    <div class="light">
+      <div id="light"></div>
+      <div id="light-btn-container">
+        <button class="light-btn" onclick="switchOn()">Switch On</button>
+        <button class="light-btn" onclick="switchOff()">Switch Off</button>
+      </div>
+    </div>
+    <!-- Light Ends -->
+
+    <!-- Generate Password Starts -->
+    <div class="generatePassword">
+      <div class="checkBox">
+        <label
+          ><input type="checkbox" id="lowercaseCheckbox" checked />Include
+          lowercase letters</label
+        >
+        <label
+          ><input type="checkbox" id="uppercaseCheckbox" checked />Include
+          uppercase letters</label
+        >
+        <label
+          ><input type="checkbox" id="numbersCheckbox" checked />Include
+          numbers</label
+        >
+        <label
+          ><input type="checkbox" id="specialCharsCheckbox" checked />Include
+          special characters</label
+        ><br>
+        <label
+          >Password Length:
+          <input type="number" id="passwordLength" min="8" max="20" value="12"
+        /></label>
+        <button id="generateButton">Generate Password</button>
+        <input type="text" id="password" readonly />
+      </div>
+    </div>
+    <!-- Generate Password Ends -->
+
+    <script src="./assets/js/switch-on-off.js"></script>
+    <script src="./assets/js/generate-password.js"></script>
+  </body>
+</html>
